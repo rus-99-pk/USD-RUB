@@ -1,0 +1,11 @@
+{
+  "description": "Convert US Dollar to Russian ruble. Updates are received every 30 seconds.\n\nIt is a fork of USD-TRY. This extension uses economia.awesomeapi.com.br",
+  "name": "USD-RUB",
+  "shell-version": [
+    "43",
+    "44"
+  ],
+  "url": "https://github.com/rus-99-pk/USD-RUB",
+  "uuid": "usd-rub@rus-99-pk.github.com",
+  "version": 4
+}
