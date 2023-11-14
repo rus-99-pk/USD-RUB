@@ -3,7 +3,7 @@ Gnome extension for convert US Dollar to Russian ruble.
 ```
 Gnome-Shell v.(43,44) Extension, for conversion of USD to RUB.
 ```
-This is extension is a modified  version of https://github.com/rus-99-pk/USD-RUB extension to show USD to RUB.
+This is extension is a modified  version of https://github.com/arifesat/USD-TRY-GShell extension to show USD to TRY.
 ```
 # Licence
 ```
