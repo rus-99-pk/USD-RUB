@@ -15,7 +15,7 @@ See LICENSE File
 ```
 # How to install
 ```
-cd /tmp && git clone https://github.com/rus-99-pk/USD-RUB.git && mv USD-RUB usd-rub@rus-99-pk.github.com && cp -av usd-rub@rus-99-pk.github.com ~/.local/share/gnome-shell/extensions/ && gnome-extensions enable usd-rub@rus-99-pk.github.com && rm -rf usd-try-gshell@arifesat.github.com
+cd /tmp && git clone https://github.com/rus-99-pk/USD-RUB.git && mv USD-RUB usd-rub@rus-99-pk.github.com && cp -r usd-rub@rus-99-pk.github.com ~/.local/share/gnome-shell/extensions/ && rm -rf usd-rub@rus-99-pk.github.com && killall -3 gnome-shell && gnome-extensions enable usd-rub@rus-99-pk.github.com
 
 
 ```
