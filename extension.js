@@ -52,6 +52,13 @@ function disable() {
         session.abort(session);
         session = null;
     }
+    if (panelButtonText) {
+        panelButtonText.destroy();
+        panelButtonText = null;
+    }
+    if (dollarQuotation) {
+        dollarQuotation = null;
+    }
 }
 
 // Handle Requests API Dollar
@@ -80,7 +87,7 @@ async function handle_request_dollar_api() {
             // Sext text in Widget
             panelButtonText = new St.Label({
             style_class : "cPanelText",
-                text: "(1 USD = " + dollarQuotation + " RUB)",
+                text: "[ 1 USD = " + dollarQuotation + " RUB ]",
                 y_align: Clutter.ActorAlign.CENTER,
             });
             panelButton.set_child(panelButtonText);
@@ -93,7 +100,7 @@ async function handle_request_dollar_api() {
     } catch (error) {
         console.error(`Traceback Error in [handle_request_dollar_api]: ${error}`);
         panelButtonText = new St.Label({
-            text: "(1 USD = " + _dollarQuotation + ")" + " * ",
+            text: "[ 1 USD = " + _dollarQuotation + "" + " * ]",
             y_align: Clutter.ActorAlign.CENTER,
         });
         panelButton.set_child(panelButtonText);
